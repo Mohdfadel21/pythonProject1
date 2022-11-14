@@ -50,6 +50,8 @@ A = list(map(int, input('Enter elements of List: ').split()))
 B = []
 c = []
 
+MOG="ga"
+
 for j in A:
     if j % 2 == 0:
         B.append(j)
