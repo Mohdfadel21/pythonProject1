@@ -28,7 +28,7 @@ carname = "Volvo "
 
 
 input_number= input("Enter number")
-
+mm="mm"
 if input_number.isdigit() and input_number.isspace() and not input_number.find(" "):
 
     cast_num = int(input_number)
