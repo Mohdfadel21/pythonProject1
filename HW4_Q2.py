@@ -2,14 +2,20 @@ import math
 
 num1=input("Enter number")
 num2=input("Enter number")
+def checkValueIsNumber(inputStr: str):
+   if inputStr != None and not inputStr.isspace() and inputStr.count(".") <= 1:
+       inputStr = inputStr.replace(".", "1")
+       if inputStr.isdigit():
+          return True
+   return False
+check_num1=checkValueIsNumber(num1)
+check_num2=checkValueIsNumber(num2)
 
-check= (num1.isspace() or num1.isdigit()) and (num2.isdigit() or num2.isspace() )
-if check == "false" :
-    print("invalid")
 
-else :
-    num1=int(num1)
-    num2=int(num2)
+if  check_num1 and check_num2 :
+    num1 = float(num1)
+    num2 = float(num2)
+
 
 
 
